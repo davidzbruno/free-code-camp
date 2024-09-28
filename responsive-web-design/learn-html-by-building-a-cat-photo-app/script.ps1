@@ -7,7 +7,7 @@ function Set-Directory {
         [int]$n
     )
 
-    for ($i = 0; $i -le $n; $i++) {
+    for ($i = 1; $i -le $n; $i++) {
         # Format the directory name with zero padding if necessary
         $dirName = "step-{0:D2}" -f $i
 
