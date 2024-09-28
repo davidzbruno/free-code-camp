@@ -6,7 +6,7 @@ read -p "How many directories should I create? " NUMBER_OF_DIRECTORIES
 
 function make_directory() {
     local n=$1
-    for i in $(seq -w 0 $n)
+    for i in $(seq -w 1 $n)
     do
         if [ ! -d "step-$i" ]; then  # Directory DOES NOT EXIST
             mkdir "step-$i"
