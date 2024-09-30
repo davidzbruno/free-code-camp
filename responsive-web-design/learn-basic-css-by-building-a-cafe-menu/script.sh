@@ -11,7 +11,10 @@ function make_directory() {
         if [ ! -d "step-$i" ]; then  # Directory DOES NOT EXIST
             mkdir "step-$i"
         fi
-        touch "step-$i/index.html"  # Create index.html either way
+        touch "step-$i/index.html"  # Create index.html for all challenges
+        if [ $i -ge 14 ]; then
+            touch "step-$i/styles.css"  # Create styles.css file for remaining challenges
+        fi
     done
 }
 
