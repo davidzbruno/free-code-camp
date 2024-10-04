@@ -1,6 +1,7 @@
 const JSX = (
     <div>
       <h1>Random Facts</h1>
+      {/* Crazy Comment Inject :) */}
       <p>Here are some interesting tidbits:</p>
       <ul>
         <li>The honeybee is the only insect that produces food eaten by humans.</li>
