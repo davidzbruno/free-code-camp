@@ -1,3 +1,2 @@
-text = "Hello World"
-
-print(text[6])
+text = 'Hello World'
+print(text[-1])
