@@ -3,7 +3,9 @@ body {
     font-family: sans-serif;
 }
 
-
+.established {
+    font-style: italic;
+}
 
 h1,
 h2,
