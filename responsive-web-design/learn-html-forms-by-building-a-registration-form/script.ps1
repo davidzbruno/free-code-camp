@@ -17,9 +17,13 @@ function Set-Directory {
         }
         
         # Create index.html inside the directory
-        $filePath = Join-Path $dirName "index.html"
-        if (-not (Test-Path -Path $filePath)) {
-            New-Item -ItemType File -Path $filePath | Out-Null
+        $indexFilePath = Join-Path $dirName "index.html"
+        if (-not (Test-Path -Path $indexFilePath)) {
+            New-Item -ItemType File -Path $indexFilePath | Out-Null
+        }
+        $styleFilePath = Join-Path $dirName "styles.css"
+        if (-not (Test-Path -Path $styleFilePath)) {
+            New-Item -ItemType File -Path $styleFilePath | Out-Null
         }
     }
 }
