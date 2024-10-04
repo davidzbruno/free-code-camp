@@ -30,7 +30,9 @@ p {
     max-width: 500px;
 }
 
-
+hr {
+    height: 3px;
+}
 
 h1,
 h2 {
