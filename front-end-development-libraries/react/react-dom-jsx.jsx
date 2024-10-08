@@ -5,3 +5,5 @@ const JSX = (
     </div>
   );
   // Add your code below this line
+  
+  ReactDOM.render(JSX, document.getElementById("challenge-node"));
